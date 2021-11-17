@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Share%20Tech");
+@import url("https://fonts.googleapis.com/css?family=Zen%20Antique");
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Zen Antique";
+    background-color: grey;
+    color: black;
+    font-size: 12px;
+}
+
+.container {
+    width:1000px;
+    margin: 0em auto;
+    background-color: black;
+}
+
+header {
+    font-family: "Share Tech";
+    background-image: url("../images/fondo_cab.jpg");
+    background-repeat: no-repeat;
+    background-size: 1000px 500px;
+    display: flex;
+    flex-wrap: wrap; /* When you want a flex item to occupy an entire row,
+    set it to width: 100% or flex-basis: 100%, and enable wrap on the container.*/
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: auto;
+    color: white;
+    font-size: 3em;
+    padding-top:15px;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+header li {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+a{
+    color: white; 
+}
+header a {
+    text-decoration: none;
+    background-color: #7A1600;
+    padding: 10px 40px 10px 40px;
+    display: block;
+    border-radius: 15px;
+}
+
+a:hover {
+    color: #7A1600;
+    background-color: white;
+}
+
+#section-home,  #section-info {
+    padding-left: 180px;
+    padding-right: 180px;
+    background-color: black;
+    color: white;
+    overflow: hidden; /* forcing it to contain the children floating elements.*/
+}
+
+h2 {
+    font-family: "Share Tech";
+    text-align: center;
+    font-size: 1.8em;
+}
+
+#section-home figure {
+    float : left;
+    margin-right: 20px;
+}
+#section-home figure img { 
+    width: 490px;
+    padding-bottom: 5px;
+}
+
+#section-home figure + p {
+    padding-top: 40px;
+}
+
+#section-val {
+    padding-top: 15px;
+    background-color: #FF9177;
+    padding-bottom: 50px;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 40px;
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-bottom: 2px solid black;
+}
+
+caption {
+    background-color: #7A1600;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.3em;
+}
+thead {
+    background-color: #FFCDC2;
+}
+tfoot {
+    background-color: #7A1600;
+    color: white;
+}
+
+th, td {
+    padding: 5px 25px 5px 25px;
+    text-align: center;
+}
+
+td > img {
+    width: 25px;
+}
+
+tfoot th {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 1.1em;
+}
+
+th a {
+    font-style: italic;
+}
+
+thead th, td, tfoot th {
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(3) td {
+    border-bottom: 2px solid black;
+}
+
+
+h3 {
+    text-align: center;
+}
+
+#section-info p{
+    text-align: center;
+}
+
+form {
+    padding-top: 15px;
+}
+
+.section-info-form label{
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+.section-info-form ul:first-of-type {
+    float: left;
+    margin-left: -30px;
+}
+
+.section-info-form ul:nth-of-type(2) {
+    padding-top: 11px;
+}
+
+.section-info-form-interests {
+    padding-top: 15px;
+}
+
+.section-info-form-interests p {
+    text-align: center;
+}
+
+fieldset {
+    
+    background-color: #262626;
+}
+
+.section-info-form-interests fieldset:first-of-type {
+    width: 290px;
+    float: left;
+    margin-left: 20px;
+}
+
+.section-info-form-interests fieldset:nth-of-type(2) {
+    margin-left: 380px;
+    width: 225px;
+}
+
+fieldset ul:first-of-type {
+    float: left;
+}
+
+.section-info-form-submit {
+    color: white;
+    padding-top: 15px;
+}
+
+.section-info-form-submit p {
+    text-align: center;
+}
+
+.section-info-form-submit a {
+    text-decoration: underline;
+}
+
+button {
+    border:1px solid white;
+    border-radius:0.2em;
+    padding: 5px 10px;
+    background-color: #262626;
+    color: white;
+    font-weight: bold;
+    margin: 10px 40px 10px 40px;
+}
+
+button[type="reset"]:hover {
+    background-color: red;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: green;
+}
+
+footer {
+    background-color: white;
+    padding: 10px 0px 15px 0px;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 5px;
+    margin: 0;
+}
